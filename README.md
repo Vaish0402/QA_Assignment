@@ -67,4 +67,13 @@
     4. **Validation and Reporting**  
         - Verified that all responses matched expected outcomes (200/201 codes).  
         - Confirmed that invalid requests were handled gracefully.  
-        - Reviewed generated reports to ensure all **6 test cases passed successfully**.
+        - Reviewed generated reports to ensure all **6 test cases passed successfully**
+
+##  API Endpoints Used (from https://reqres.in)
+
+  1. **GET /api/users?page=2** — Retrieve list of users  
+  2. **GET /api/unknownpage** — Invalid endpoint (negative test)  
+  3. **POST /api/users** — Create a new user  
+  4. **POST /api/users** (Empty body) — Negative test for missing payload  
+  5. **PUT /api/users/2** — Update existing user  
+  6. **PUT /api/users/99999** — Update invalid user (negative test)
